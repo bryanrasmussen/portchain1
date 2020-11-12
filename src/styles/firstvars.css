@@ -1,0 +1,62 @@
+:root {
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+
+    --dark-hue: 206;
+    --light-hue: 26;
+    --emph-dark-hue: 222;
+    --emph-light-hue: 111;
+    --warm-hue: 4;
+    --cold-hue: 234;
+    --default: 55%;
+    --high: 75%;
+    --extreme: 95%;
+    --low: 11%;
+    --subdued: 6%;
+
+    --light: hsl(var(--light-hue), var(--extreme), var(--extreme));
+    --dark: hsl(var(--dark-hue), var(--extreme), var(--subdued));
+    --shadow: hsl(calc(var(--dark-hue) - 5), calc(var(--extreme) - 5), var(--low));
+   
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
+    --foreground: var(--dark);
+    --background: var(--light);
+    --seperator: hsl(var(--emph-light-hue), var(--default), var(--default));
+    --emphasized-seperator: hsl(var(--emph-light-hue), var(--default), var(--extreme));
+    --interest-area: hsl(var(--cold-hue), var(--default), var(--default));
+    --interest-color: var(--light);
+    --emphasized-interest: hsl(var(--cold-hue), var(--default), var(--high));
+    --faded: hsl(var(--emph-light-hue), var(--low), var(--low));
+    --active: hsl(var(--warm-hue), var(--default), var(--high));
+    --highValue: hsl(var(--warm-hue), var(--extreme), var(--extreme));
+    --lowValue: hsl(var(--cold-hue), var(--extreme), var(--extreme));
+}
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --foreground: var(--light);
+      --background: var(--dark);
+      --seperator: hsl(var(--emph-light-hue), var(--default), var(--default));
+      --emphasized-seperator: hsl(var(--emph-light-hue), var(--default), var(--extreme));
+      --interest-area: hsl(var(--cold-hue), var(--low), var(--default));
+      --emphasized-interest: hsl(var(--cold-hue), var(--low), var(--high));
+      --active: hsl(var(--warm-hue), var(--low), var(--high));
+      --shadow: hsl(calc(var(--light-hue) + 5), calc(var(--extreme) - 5), var(--low));
+    }
+  }
+
+  :root {
+    --link: var(--interest-area);
+    --emphasized-link: var(--emphasized-interest);
+    --blue: #007bff;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+  }

@@ -1,0 +1,325 @@
+@import "pure.css";
+@import "firstvars.css";
+
+body {
+    font-family: var(--font-family-sans-serif);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--foreground);
+    text-align: left;
+}
+
+/*Defaults*/
+.pure-g {
+    letter-spacing: normal;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link);
+}
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    font-weight: 100;
+}
+table {
+    width: 100%;
+}
+pre {
+    white-space: pre-wrap;
+}
+/*Additional*/
+.pull-right{
+    float: right!important;
+}
+.subhead {
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--seperator);
+    padding: 0.4em 0;
+    font-size: 80%;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+.pure-message {
+    padding: .2em 1em;
+    margin-bottom: .2em;
+    font-size: 85%;
+}
+/*Main Page*/
+.header-large h1,
+.header-large h2 {
+    margin: 0;
+}
+.header-large h1 {
+    text-transform: uppercase;
+}
+.header-large h2 {
+    font-weight: 100;
+}
+
+.nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav ul li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+.nav ul li a {
+    background: transparent;
+    border: 2px solid var(--seperator);
+    margin-top: 1em;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font-size: 85%;
+}
+.nav ul li a:hover,
+.nav ul li a:focus,
+.nav ul li .active {
+    border: 2px solid var(--emphasized-seperator);
+    text-decoration: none;
+}
+
+/*Content*/
+.content {
+    padding: 2em 1em 0;
+}
+.column-block {
+    margin: 0 0.5em 2em;
+    padding: 0;
+}
+.column-block-header {
+    background: var(--interest-area);
+    text-align: center;
+}
+.column-block-header h2 {
+    margin: 0;
+    padding-top: 2em;
+    font-size: 1em;
+    font-weight: normal;
+}
+.column-block-info {
+    font-size: 6em;
+    margin: 0.2em 0 0;
+    font-weight: 100;
+}
+.column-block-info span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.2em;
+    padding-bottom: 2em;
+    font-weight: 400;
+}
+.column-block-list li {
+    padding: 1em;
+    border-bottom: 1px solid var(--seperator);
+}
+
+/*Sidebar*/
+.sidebar {
+    background: var(--background);
+    color: var(--foreground);
+}
+
+/*Button Buble Message Types*/
+.buble-success,
+.buble-error,
+.buble-warning,
+.buble-secondary {
+    padding: .5em;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.button-success, .message-success, .column-success, .buble-success,
+.button-error, .message-error, .column-error, .buble-error,
+.button-warning, .message-warning, .column-warning, .buble-warning,
+.button-secondary, .message-secondary, .column-secondary, .buble-secondary {
+    color: var(--foreground);
+    text-shadow: 0 1px 1px var(--shadow);
+}
+
+.button-success, .message-success, .column-success, .buble-success {
+    background: var(--green);
+}
+
+.button-error, .message-error, .column-error, .buble-error {
+    background: var(--red);
+}
+
+.button-warning, .message-warning, .column-warning, .buble-warning {
+    background: var(--orange);
+}
+
+.button-secondary, .message-secondary, .column-secondary, .buble-secondary {
+    background: var(--interest-area);
+}
+.button-xxsmall {
+    font-size: 40%;
+}
+.button-xsmall {
+    font-size: 70%;
+}
+
+.button-small {
+    font-size: 85%;
+}
+
+.button-large {
+    font-size: 110%;
+}
+
+.button-xlarge {
+    font-size: 125%;
+}
+
+/*Menu*/
+#menu {
+    z-index: 1000;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+#menu a {
+    color: var(--link);
+    border: none;
+    white-space: normal;
+    padding: 0.625em 1em;
+    text-decoration: none;
+}
+
+#menu .pure-menu ul {
+    border: none;
+    background: transparent;
+    display: block;
+}
+
+#menu .pure-menu ul,
+#menu .pure-menu .menu-item-divided {
+    border-top: 1px solid var(--seperator);
+}
+
+#menu .pure-menu li a:hover,
+#menu .pure-menu li a:focus,
+#menu .pure-menu-selected,
+#menu .pure-menu-selected a {
+    color: var(--emphasized-link);
+    background: var(--faded);
+}
+
+#menu .pure-menu-heading {
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: var(--foreground);
+    padding: .5em .8em;
+    text-transform: uppercase;
+}
+
+/*Footer*/
+.footer, .navigation {
+    margin: 2em 0 0 0;
+    padding: 1em 0;
+    text-align: center;
+}
+.footer {
+    border-top: 1px solid var(--seperator);
+}
+.footer a {
+    color: var(--link);
+    font-size: 80%;
+}
+.footer .pure-menu a:hover,
+.footer .pure-menu a:focus {
+    background: none;
+}
+
+/*Media Queries*/
+@media (min-width: 48em) {
+    .header-large {
+        margin: 20% 2em 0;
+        text-align: right;
+    }
+    .header-medium {
+        margin: 10% 2em 0;
+        text-align: left;
+    }
+    .header-small {
+        margin: 0 2em 0;
+        text-align: left;
+    }
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+
+/*Bryan additions style*/
+
+.pure-menu-link {
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+}
+
+.portDataBlock {
+    width: auto;
+    min-width: 33%;
+}
+
+.portDataBlock_top .column-block-header {
+    background-color: var(--highValue);
+}
+
+.portDataBlock_last .column-block-header {
+    background-color: var(--lowValue);
+}
+
+.compoentBody, .header-small {
+    margin-left: .5rem;
+    margin-top: .7rem;
+}
+
+.sidebar {
+    width: 27vw;
+}
+.content {
+    margin-left: 27vw;
+    padding-left: 0;
+}
+
+th {
+    text-align: center;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    background-color: var(--interest-area);
+    border: 1px solid var(--seperator);
+    color: var(--interest-color);
+}
+
+td {
+    vertical-align: top;
+    border-bottom: 3px solid var(--foreground);
+}
+.timeList, .portList {
+    background-color: var(--highValue);
+    font-size: smaller;
+    padding: .5rem;
+}
