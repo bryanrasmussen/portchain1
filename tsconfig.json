@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "tsDist",
+    "module": "es6",
+    "target": "es6",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "lib": [
+      "es5", "es6", "dom", "dom.iterable"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "tsDist",
+    "dist",
+    "webpack.config.js"
+  ],
+  "include": ["custom.d.ts"]
+}
